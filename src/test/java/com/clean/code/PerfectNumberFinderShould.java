@@ -18,6 +18,12 @@ public class PerfectNumberFinderShould {
 		assertTrue(perfectNumberFinder.isPerfectNumber(6));
 	}
 	
+	@Test
+	public void return_True_when_input_number_is_28_as_it_is_a_Perfect_Number() {
+		PerfectNumberFinder perfectNumberFinder = new PerfectNumberFinder();
+		assertTrue(perfectNumberFinder.isPerfectNumber(28));
+	}
+	
 	
 
 }
