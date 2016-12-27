@@ -3,10 +3,14 @@ package com.clean.code;
 public class PerfectNumberFinder {
 
 	public boolean isPerfectNumber(int inputNumber) {
-		if(inputNumber == 6 || inputNumber ==28){
-			return true;
+		int divisor = 1;
+		int sumOfDivisors = 0;
+		while(inputNumber  > divisor){
+			if(inputNumber % divisor == 0){
+				sumOfDivisors=+inputNumber;
+			}
+			divisor++;
 		}
-		return false;
+		return sumOfDivisors == inputNumber ? Boolean.TRUE : Boolean.FALSE;
 	}
-
 }
