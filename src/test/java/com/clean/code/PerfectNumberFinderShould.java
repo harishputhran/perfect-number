@@ -29,4 +29,19 @@ public class PerfectNumberFinderShould {
 	public void return_True_when_input_number_is_28_as_it_is_a_Perfect_Number() {
 		assertTrue(perfectNumberFinder.isPerfectNumber(28));
 	}
+	
+	@Test
+	public void return_True_when_input_number_is_496_as_it_is_a_Perfect_Number() {
+		assertTrue(perfectNumberFinder.isPerfectNumber(496));
+	}
+	
+	@Test
+	public void return_True_when_input_number_is_8128_as_it_is_a_Perfect_Number() {
+		assertTrue(perfectNumberFinder.isPerfectNumber(8128));
+	}
+	
+	@Test
+	public void return_Falsee_when_input_number_is_4096_as_it_is_not_a_Perfect_Number() {
+		assertFalse(perfectNumberFinder.isPerfectNumber(4096));
+	}
 }
